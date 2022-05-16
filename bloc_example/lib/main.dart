@@ -1,11 +1,13 @@
 import 'package:bloc_example/counterBloc/page_bloc/bloc/counter_bloc.dart';
 import 'package:bloc_example/counterBloc/page_bloc/counter_bloc_page.dart';
 import 'package:bloc_example/counterBloc/page_cubit/cubit/counter_cubit.dart';
+import 'package:bloc_example/features/bloc_example/bloc/example_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'counterBloc/home_page.dart';
 import 'counterBloc/page_cubit/counter_cubit_page.dart';
+import 'features/bloc_example/bloc_example.dart';
+import 'home/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +27,10 @@ class MyApp extends StatelessWidget {
             create: (context) => CounterBloc(), child: const CounterBlocPage()),
         "/cubit": (context) => BlocProvider(
             create: (context) => CounterCubit(),
-            child: const CounterCubitPage())
+            child: const CounterCubitPage()),
+        "/bloc/example": (context) => BlocProvider(
+            create: (context) => ExampleBloc()..add(ExampleFindNameEvent()),
+            child: const BlocExamplepPage())
       },
       home: const HomePage(),
     );
