@@ -34,13 +34,18 @@ class _HomePageState extends State<HomePage> {
                       child: const Center(child: Text("Example")),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(12)),
-                    width: 180,
-                    height: 180,
-                    child: const Center(child: Text("Example Freezed")),
+                  GestureDetector(
+                    onTap: (() {
+                      Navigator.pushNamed(context, "/bloc/example/freezed");
+                    }),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(12)),
+                      width: 180,
+                      height: 180,
+                      child: const Center(child: Text("Example Freezed")),
+                    ),
                   )
                 ],
               ),
