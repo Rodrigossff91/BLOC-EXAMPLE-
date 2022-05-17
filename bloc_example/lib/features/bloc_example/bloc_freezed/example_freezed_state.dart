@@ -11,6 +11,4 @@ class ExampleFreezedState with _$ExampleFreezedState {
       required String message}) = _ExampleFreezedStateBanner;
 
   factory ExampleFreezedState.loading() = _ExampleFreezedStateLoading;
-
-  print();
 }
