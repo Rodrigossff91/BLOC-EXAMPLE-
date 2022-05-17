@@ -9,7 +9,7 @@ class BlocFreezedExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Example Freezedd'),
+        title: const Text('Example Freezed'),
       ),
       floatingActionButton: FloatingActionButton(
           child: const Text("+"),
