@@ -7,4 +7,6 @@ class ExampleFreezedEvent with _$ExampleFreezedEvent {
       _ExampleFreezedEventAddName;
   const factory ExampleFreezedEvent.removeName(String name) =
       _ExampleFreezedEventRemoveName;
+
+      print("");
 }

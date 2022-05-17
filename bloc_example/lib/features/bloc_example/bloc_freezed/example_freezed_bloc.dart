@@ -48,8 +48,8 @@ class ExampleFreezedBloc
       Emitter<ExampleFreezedState> emitter) async {
     emit(ExampleFreezedState.loading());
     final names = [
-      "Rodrigo Ferreiraa",
-      "Renan Ferreiraa",
+      "Rodrigo Ferreira",
+      "Renan Ferreira",
       "Evandro",
       "Jessica",
       "Emilio"
